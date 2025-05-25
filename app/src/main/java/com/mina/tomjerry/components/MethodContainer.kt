@@ -5,8 +5,6 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -32,8 +30,9 @@ fun MethodContainer(methods: List<String>, modifier: Modifier = Modifier) {
         )
 
         Spacer(modifier = Modifier.height(16.dp))
-        LazyColumn {
-            itemsIndexed(methods) { index, method ->
+
+        Column {
+            methods.forEachIndexed { index, method ->
                 MethodItem(text = method, number = index + 1)
                 Spacer(modifier = Modifier.height(8.dp))
             }
