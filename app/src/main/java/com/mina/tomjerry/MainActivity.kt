@@ -11,6 +11,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.mina.tomjerry.screens.JerryStoryScreen
+import com.mina.tomjerry.screens.TomAccountScreen
 import com.mina.tomjerry.screens.TomKitchenScreen
 import com.mina.tomjerry.ui.theme.TomJerryTheme
 
@@ -20,10 +22,11 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
                 Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
-//                    JerryStoryScreen(
-//                        modifier = Modifier.padding(innerPadding)
-//                    )
-                    TomKitchenScreen(modifier = Modifier.padding(innerPadding))
+                    JerryStoryScreen(
+                        modifier = Modifier.padding(innerPadding)
+                    )
+//                    TomKitchenScreen(modifier = Modifier.padding(innerPadding))
+//                    TomAccountScreen(modifier = Modifier.padding(innerPadding))
                 }
             
         }
