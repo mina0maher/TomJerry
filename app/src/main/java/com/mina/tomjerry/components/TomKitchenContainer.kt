@@ -16,6 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.mina.tomjerry.ui.theme.DarkBlue
@@ -44,6 +45,7 @@ fun TomKitchenContainer(
                 text = text,
                 fontFamily = ibmPlexSans,
                 color = PrimaryTextColor,
+                fontWeight = FontWeight.SemiBold,
                 fontSize = 20.sp
             )
 
